@@ -1,0 +1,40 @@
+.styleBrowse {
+  border-radius: 40px;
+  background: rgba(240, 240, 240, 1);
+  padding: 76px 64px;
+}
+
+.styleBrowseList {
+  display: grid;
+  gap: 10px;
+}
+
+.styleBrowseItem {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.styleBrowseItemBig {
+  grid-column: span 2;
+}
+
+.styleBrowseImg {
+  width: 100%;
+  object-fit: fill;
+  transition: transform 0.4s ease;
+}
+
+.styleBrowseItem:hover .styleBrowseImg {
+  transform: scale(1.1);
+}
+
+.styleBrowseText {
+  position: absolute;
+  top: 25px;
+  left: 36px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 100%;
+}

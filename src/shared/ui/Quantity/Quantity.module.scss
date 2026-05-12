@@ -1,0 +1,15 @@
+.quantity {
+  padding: 10px 20px;
+  border-radius: 62px;
+  background: rgb(240, 240, 240);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+}
+
+.quantityNumber {
+  font-size: 21px;
+  width: 13px;
+  font-weight: 500;
+}

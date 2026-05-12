@@ -1,0 +1,13 @@
+.topsellingsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px 10px;
+  margin-bottom: 36px;
+}
+
+.buttonWrap {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,339 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  transition: box-shadow 0.3s ease;
+}
+
+.scrolled {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+
+  max-width: 1240px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.burger {
+  display: flex;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 3px;
+  z-index: 20;
+  transition:
+    box-shadow 0.4s,
+    background-color 0.4s,
+    border 0.4s;
+}
+
+.burger:focus {
+  box-shadow: 0 0 0 2px rgb(0 0 0 / 51%);
+}
+
+.burger:active {
+  background-color: rgba(86, 86, 86, 0.164);
+}
+
+.burgerLine {
+  position: relative;
+  top: 50%;
+  width: 30px;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+}
+
+.burgerLine::before,
+.burgerLine::after {
+  content: '';
+  left: 0;
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #000000;
+  transition: transform 0.4s;
+}
+
+.burgerLine::before {
+  transform: translateY(-9px);
+}
+
+.burgerLine::after {
+  transform: translateY(9px);
+}
+
+.burgerLine.active {
+  background-color: transparent;
+}
+
+.burgerLine.active::before {
+  transform: rotate(45deg);
+}
+
+.burgerLine.active::after {
+  transform: rotate(-45deg);
+}
+
+.logo {
+  font-family: Integral CF;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+}
+
+.menuList {
+  display: flex;
+  gap: 24px;
+}
+
+.menuListMobile {
+  position: fixed;
+  top: 85px;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 40px 20px;
+  transition: left 0.4s ease;
+  z-index: 999;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.open {
+  left: 0;
+}
+
+.menuListMobile .menuItem {
+  width: 100%;
+}
+
+.menuListMobile .menuLink {
+  display: block;
+  width: 100%;
+  padding: 16px 20px;
+}
+
+.menuLink {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  transition: color 0.2s;
+}
+
+.menuLinkProducts {
+  color: rgba(0, 0, 0, 0.6);
+  animation: blink 4s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  25%,
+  75% {
+    color: rgb(219, 219, 219);
+  }
+}
+
+.menuLink:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.mobileSearchWrapper {
+  position: fixed;
+  top: 85px;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 20px;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transform: translateY(-20px);
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease;
+}
+
+.mobileSearchOpen {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menuSearch {
+  position: relative;
+  flex-grow: 1;
+}
+
+.menuSearchLabel {
+  display: block;
+  width: 100%;
+}
+
+.menuSearchInput {
+  display: block;
+  width: 100%;
+  padding: 12px 16px 12px 52px;
+  border-radius: 62px;
+  background: rgba(240, 240, 240, 1);
+}
+
+.iconSearch {
+  color: #000000;
+}
+
+.menuSearchList {
+  position: absolute;
+  left: 0;
+  top: 76px;
+  max-width: 100%;
+  width: 100%;
+  background: rgb(240, 238, 237);
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  gap: 20px;
+  max-height: 482px;
+  overflow: auto;
+  border-radius: 12px;
+  transform: translateY(-300%);
+  transition: transform 1.9s;
+}
+
+.menuSearchListActive {
+  transform: translateX(0%);
+}
+
+.menuSearchItem {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+.menuSearchWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.menuSearchContent {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.menuSearchImg {
+  background: rgb(234, 232, 232);
+  border: 1px solid rgb(196, 196, 196);
+  box-shadow: 0px 8px 26px -10px rgba(66, 68, 90, 1);
+  border-radius: 12px;
+}
+
+.menuSearchTitle {
+  font-weight: 500;
+}
+
+.menuSearchButton {
+  border-radius: 5px;
+  border: 1px solid rgb(210, 210, 210);
+  padding: 6px 15px;
+  background-color: rgb(245, 245, 245);
+}
+
+.buttonSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #fff;
+  transition:
+    background-color 0.3s,
+    box-shadow 0.3s,
+    border 0.3s;
+}
+
+.buttonSearch:hover {
+  background-color: #faf7f7;
+}
+
+.buttonSearch:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+.buttonSearch:active {
+  background-color: #f4f4f4;
+}
+
+.buttonSearch svg {
+  transition: fill 0.3s;
+  fill: rgba(0, 0, 0, 0.6);
+}
+
+.buttonSearch:hover svg {
+  fill: rgba(0, 0, 0, 0.9);
+}
+
+.buttonSearch:active svg {
+  fill: #000;
+}
+
+.lines {
+  border: 1px solid rgb(251, 9, 9);
+}
+
+.iconInput {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.menuBoxButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+}
+
+.menuLinkCart {
+  position: relative;
+}
+
+.menuCounter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4px 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(50%, -50%);
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(14 156 1);
+}

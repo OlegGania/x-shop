@@ -1,0 +1,23 @@
+.reviewList {
+  display: flex;
+  gap: 20px;
+}
+
+.reviewItem {
+  display: flex;
+  gap: 10px;
+}
+
+.sliderContainer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slickSlider {
+  width: 100%;
+}
+
+.slideItem {
+  padding: 0 10px;
+  box-sizing: border-box;
+}

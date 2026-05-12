@@ -1,0 +1,18 @@
+.newArrivalsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px 10px;
+  margin-bottom: 36px;
+}
+
+.newArrivalsLineBottom {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.buttonWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}

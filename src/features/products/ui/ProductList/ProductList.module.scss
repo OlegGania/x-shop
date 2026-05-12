@@ -1,0 +1,41 @@
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 7px;
+  margin-bottom: 30px;
+}
+
+.productPageList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.buttonPagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  width: 42px;
+  height: 42px;
+  background-color: rgb(226, 226, 226);
+  font-weight: 500;
+  line-height: 32px;
+  color: black;
+}
+
+.buttonPagination:hover {
+  background-color: rgb(210, 210, 210);
+}
+
+.buttonPagination:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(107, 107, 108, 0.5);
+}
+
+.buttonPagination:active {
+  background-color: rgb(190, 190, 190);
+  transform: scale(0.95);
+}

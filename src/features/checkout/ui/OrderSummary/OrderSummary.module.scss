@@ -1,0 +1,160 @@
+.productContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productInfo {
+  display: flex;
+  gap: 20px;
+}
+
+.productImage {
+  border-radius: 8.66px;
+  background: rgb(240, 240, 240);
+}
+
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.summary {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 20px 24px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.summaryBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summaryTitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 1);
+}
+
+.summaryCount {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summaryLabel {
+  line-height: 100%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.summaryValue {
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.summaryValueRed {
+  color: red;
+}
+
+.cartContent {
+  display: flex;
+  gap: 15px;
+}
+
+.cartList {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.cartItem {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.cartItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cartItem:hover .cartImage {
+  transform: scale(1.1);
+}
+
+.cartImgWrap {
+  border-radius: 8.66px;
+  background: rgba(240, 240, 240, 1);
+}
+
+.cartImage {
+  transition: transform 0.2s ease;
+}
+
+.cartDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cartTitle {
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.cartSize.cartSizeValue {
+  font-size: 14px;
+  line-height: 100%;
+}
+
+.cartValue {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.cartColor {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.cartColorValue {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.cartPrices {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cartPrice {
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.cartColorDot {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.cartQuantity {
+  font-weight: 700;
+  line-height: 100%;
+}

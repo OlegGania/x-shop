@@ -1,0 +1,68 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.1;
+  color: black;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 80px;
+}
+
+.logo {
+  font-family: Integral CF;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+}
+
+.logo--footer {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.line {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navigateList {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-top: 24px;
+  margin-bottom: 24px;
+}
+
+.navigateLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navigateLink:hover {
+  text-decoration: underline;
+}
+
+.sr_only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

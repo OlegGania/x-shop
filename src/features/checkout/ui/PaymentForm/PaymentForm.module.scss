@@ -1,0 +1,80 @@
+.paymentForm {
+  flex: 1 1 450px;
+}
+
+.paymentWrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 16px;
+}
+
+.paymentTitle {
+  font-size: 22px;
+  padding: 20px;
+}
+
+.paymentLine {
+  border-top: 1px solid gray;
+}
+
+.paymentList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+}
+
+.paymentItem {
+  position: relative;
+}
+
+.paymentInput {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.paymentLabel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  padding: 16px 16px 16px 50px;
+  border: 1px solid gray;
+  border-radius: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  cursor: pointer;
+}
+
+.paymentLabel::before {
+  content: '';
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  width: 25px;
+  height: 25px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: translateY(-50%);
+  transition: border 0.2s linear;
+}
+
+.paymentInput:checked + .paymentLabel::before {
+  border: 8px solid gray;
+}
+
+.paymentInput:focus-visible + .paymentLabel {
+  outline: 2px solid black;
+  outline-offset: 2px;
+}
+
+.paymentIcon {
+  flex-shrink: 0;
+  line-height: 1;
+}

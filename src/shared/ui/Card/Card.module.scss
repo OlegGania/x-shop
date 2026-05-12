@@ -1,0 +1,59 @@
+.card {
+  width: 290px;
+}
+
+.card:hover .cardImg {
+  transform: scale(1.1);
+}
+
+.imgBox {
+  border-radius: 20px;
+  background: rgba(240, 238, 237, 1);
+  margin-bottom: 15px;
+}
+
+.cardImg {
+  transition: transform 0.2s ease;
+}
+
+.cardWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.cardTitle {
+  font-weight: 700;
+}
+
+.cardPricesWrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cardPrice,
+.cardOldPrice {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.cardOldPrice {
+  text-decoration-line: line-through;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.cardDiscount {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 100%;
+  width: 58px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 51, 51, 1);
+  border-radius: 62px;
+  background: rgba(255, 51, 51, 0.1);
+}

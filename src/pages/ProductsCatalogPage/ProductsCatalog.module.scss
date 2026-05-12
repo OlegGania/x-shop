@@ -1,0 +1,35 @@
+.productsCatalog {
+  display: flex;
+  gap: 30px;
+}
+
+.productsCatalogWrap {
+  width: 100%;
+}
+
+.productsCatalogInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.productsCatalogTitle {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.productsCatalogControls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.productsCatalogLabel {
+  display: flex;
+  gap: 10px;
+}
+
+.productsCatalogValue {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+}

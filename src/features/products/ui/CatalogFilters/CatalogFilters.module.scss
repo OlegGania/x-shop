@@ -1,0 +1,94 @@
+.catalogFilters {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 20px 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.filtersHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filtersTitle {
+  font-weight: 700;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 1);
+}
+
+.filterCategoryList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.filterCategoryButton {
+  font-size: 16px;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+  svg {
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.9);
+  }
+
+  &:hover svg {
+    transform: translateX(4px);
+  }
+}
+
+.filterCategoryButtonActive {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.brandList {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.brandButton {
+  font-size: 14px;
+  line-height: 100%;
+  padding: 10px 20px;
+  color: rgba(0, 0, 0, 0.6);
+  background: rgba(240, 240, 240, 1);
+  border-radius: 62px;
+  cursor: pointer;
+  transition: color 0.1s, background-color 0.1s, transform 0.1s;
+}
+
+.brandButton:hover {
+  color: white;
+  background-color: black;
+}
+
+.brandButton:active {
+  transform: scale(0.96);
+}
+
+.brandButtoActive {
+  color: white;
+  background-color: black;
+  transform: scale(1);
+}
+
+.filterPracies {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
